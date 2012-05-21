@@ -1,0 +1,74 @@
+// Set the correct sprite paths
+$iconSpritePath: image-path('glyphicons-halflings.png');
+$iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
+
+$navbarBackground: #555;
+$navbarBackgroundHighlight: #888;
+$navbarText: #eee;
+$navbarLinkColor: #eee;
+$navbarLinkColorHover: #809FFF;
+$textColor: #555;
+$linkColor: #809FFF;
+$linkColorHover: darken($linkColor, 15%);
+
+@import "bootstrap";
+
+body { padding-top: 60px; }
+
+@import "bootstrap-responsive";
+/*------------------MAIN LAYOUT------------------*/
+body { color: #555; }
+/*---------HEADER---------*/
+.navbar .brand {
+  color: #809FFF;
+  font-weight: bold;
+}
+
+/*--------HERO-UNIT-------*/
+.hero-unit {
+	header h1 {
+	  color: #809FFF;
+	}
+}
+
+/*---------FOOTER---------*/
+hr.footer-line { 
+	height: 1px;
+	color: #555;
+	background-color: #555; 
+}
+
+#footer-nav {
+	text-align: center;
+	font-size: 13px;
+	
+		
+	ul {
+		liststyle: none;
+	}
+		
+	li {
+		display: inline;
+		padding-right: 5px;
+	}
+		
+	a, a:visited {
+		color: #aaa;
+		&:hover { color: #809FFF; text-decoration: none;}
+		&:active { color: #809FFF; }
+	}
+}
+
+#copyright {
+	p {
+		color: #aaa;
+		font-size: 13px;
+		text-align: center;
+	}
+}
+
+/*------------------PAGES LAYOUT------------------*/
+
+
+/*-------------------MISC ITEMS-------------------*/
+.center { text-align: center; }

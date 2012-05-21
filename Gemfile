@@ -5,7 +5,10 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+  gem 'mysql2'
+  gem 'simple_form', '~> 2.0.1'
+  gem 'paperclip'
+  gem 'devise'
 
 
 # Gems used only for assets and not required
@@ -14,6 +17,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
+  gem 'bootstrap-sass'
 end
 
 gem 'jquery-rails'

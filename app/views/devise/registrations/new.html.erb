@@ -1,0 +1,23 @@
+<section class="hero-unit">
+  <header>
+	<h1>Create an Account</h1>
+  </header>
+  <br/>
+  <section>
+  <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+
+  	  <div class="inputs">
+    	<%= f.input :email, :required => true, :autofocus => true, :placeholder => "email", :label => false %>
+    	<%= f.input :password, :required => true, :placeholder => "password", :label => false %>
+    	<%= f.input :password_confirmation, :required => true, :placeholder => "confirmation", :label => false %>
+  	  </div>
+
+      <div class="actions">
+        <%= f.button :submit, "Sign up", :class => "btn btn-primary" %>
+  	  </div>
+	<% end %>
+
+	<%= render "links" %>
+  </section>	
+</section>
