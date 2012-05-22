@@ -1,4 +1,4 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET']
+  provider :facebook, ENV['130925530376635'], ENV['0ec2e7b251cb73fec7b0d4f4ac4bd391']
   provider :twitter, 'zSI4bMf4jvVk54BGwjVtwQ', 'oGnxjkPQjURugPwQp59gdnIuAPvD50E3b9nAystY'
 end
