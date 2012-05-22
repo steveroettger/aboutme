@@ -14,14 +14,14 @@ test:
   encoding: unicode
   database: aboutme
   pool: 5
-  username: 
-  password: 
+  username: aboutme 
+  password: password    
 
 production:
   adapter: postgresql
   encoding: unicode
   database: aboutme
   pool: 5
-  username: 
-  password: 
+  username: aboutme 
+  password: password
 

@@ -7,11 +7,20 @@
           <span class="icon-bar"></span>
         </a>
          <%= link_to "AboutME", root_path, :class => "brand" %>
-        <div class="nav-collapse">
-          <ul class="nav pull-right">
-            <li><%= link_to "Log in", new_user_session_path %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+		
+		<% if user_signed_in? %>
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
+            </ul>
+          </div><!-- nav-collapse -->
+        <% else %>
+		  <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li><%= link_to "Log in", new_user_session_path %></li>
+            </ul>
+          </div><!-- nav-collapse -->
+        <% end %>
+      </div><!-- container-->
+    </div><!-- navbar-inner -->
  </header>

@@ -5,10 +5,14 @@ gem 'rails', '3.1.3'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-  gem 'mysql2'
-  gem 'simple_form', '~> 2.0.1'
-  gem 'paperclip'
-  gem 'devise'
+gem 'mysql2'
+gem 'simple_form', '~> 2.0.1'
+gem 'paperclip'
+
+# Handles anything login
+gem 'devise'
+gem 'omniauth'  
+gem 'omniauth-facebook'
 
 
 # Gems used only for assets and not required
